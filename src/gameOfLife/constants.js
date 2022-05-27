@@ -1,4 +1,7 @@
-export const GAME_SIZE = 10;
+export var GAME_SIZE = 10;
+export function set_size(value){
+  GAME_SIZE = value
+}
 export const CELL_SIZE = 20;
 export const RENDER_INTERVAL = 500;
 

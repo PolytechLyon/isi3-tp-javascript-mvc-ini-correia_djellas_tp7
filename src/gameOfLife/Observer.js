@@ -1,5 +1,0 @@
-class Observer{
-    Update(Observable){
-
-    }
-}

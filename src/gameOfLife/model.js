@@ -5,7 +5,7 @@ import {
   RENDER_INTERVAL,
   SQUARE
 } from "./constants.js";
-import { drawGame, Update } from "./view.js";
+import { Update } from "./view.js";
 
 export class Model{
   constructor() {
@@ -19,14 +19,6 @@ export class Model{
     this.observers.push(_observer);
   }
 
-  NotifyObservers(){
-    var mod = this;
-    this.observers.forEach(function(model){
-      Update(mod);
-    }
-    );
-  }
-
   init() {
     this.state = Array.from(new Array(this.height), () =>
       Array.from(new Array(this.width), () => CELL_STATES.NONE)
@@ -38,6 +30,7 @@ export class Model{
   }
 
   run(date = new Date().getTime()) {
+    console.log(GAME_SIZE);
     this.raf = requestAnimationFrame(() => {
       const currentTime = new Date().getTime();
       const map = {};
@@ -109,9 +102,14 @@ export class Model{
     return number;
   }
 
-  updated() {
+  updated() { //équivalent de la fonction NotifyAll() du pattern Observer
+    var mod = this;
     
-    //drawGame(this);
-    this.NotifyObservers();
+    this.width = GAME_SIZE;
+    this.height = GAME_SIZE;
+    this.observers.forEach(function(model){
+      Update(mod);
+    }
+    );
   }
 }
