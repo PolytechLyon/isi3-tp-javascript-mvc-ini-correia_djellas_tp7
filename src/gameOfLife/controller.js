@@ -1,6 +1,5 @@
 import { set_size } from "./constants.js";  
 import { drawGame, initView } from "./view.js";
-import { Model } from "./model.js";
 export const controller = model => {
 
   document.getElementById('start').addEventListener('click', event => {
