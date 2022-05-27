@@ -28,7 +28,7 @@ Il a été inventé par [John Horton Conway](https://fr.wikipedia.org/wiki/John_
 1. Expliquer le design pattern MVC à l'aide d'un schéma à insérer directement ici.
 Utiliser un outils comme Dia pour le représenter. Je veux **votre** schéma, pas un de ceux qu'on peut trouver sur le net.
 
-
+![](schema_mvc.png)
 
 2. Expliquer ce pattern en complétant ce texte.
 
@@ -37,8 +37,9 @@ Les responsabilités ne sont alors plus cycliques.
 On peut ainsi changer l'aspect visuel de son application sans pour autant impacter le modèle.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC. 
+
 Le pattern MVC est très utile pour des applications web, ou tout types d'application disposant d'une interface graphique. 
-## finir
+
 
 ## À faire (obligatoire)
 
@@ -55,10 +56,10 @@ Cela relève du design pattern Observer/Observable.
 1. Expliquer votre implémentation:
 
 L'usage d'un callback permet ici d'appeler la fonction Update de la vue, afin de dire à la _View_ de se redessiner.
-L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la fonction updated il peut notifier la vue.
+L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la fonction updated il peut notifier la _View_.
 
 2. Insérer ici un UML montrant le pattern Observer/Observable lié aux objets de ce TP.
-
+![](UML.png)
 ## Optionnel
 
 > Si vous voulez apprendre d'autres choses
