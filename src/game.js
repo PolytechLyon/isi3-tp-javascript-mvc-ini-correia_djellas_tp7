@@ -3,10 +3,10 @@ import { initView, drawGame } from "./gameOfLife/view.js";
 import { Model } from "./gameOfLife/model.js";
 import { controller } from "./gameOfLife/controller.js";
 
-initView();
+
 
 const model = new Model();
 
+initView(model);
 model.init();
-drawGame(model);
 controller(model);
