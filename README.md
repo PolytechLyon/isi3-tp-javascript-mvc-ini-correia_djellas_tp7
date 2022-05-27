@@ -65,7 +65,8 @@ L'objet _Model_ n'a pas de lien avec le contrôleur, pourtant grâce à la fonct
 > Si vous voulez apprendre d'autres choses
 
 - Faire en sorte de pouvoir changer les dimensions de la grille par un `<input/>` HTML.
-J'ai fait en sortes de pouvoir modifier la veleur de l'ancienne constance GAME_SIZE à travers le controller, 
+J'ai fait en sortes de pouvoir modifier la veleur de l'ancienne constance GAME_SIZE à travers le controller, mais je n'ai pas réussi à 
+modifier la vue en conséquence, ni a tout faire fonctionner (le programme plante au bout d'un moment lorsque l'on modifie la taille).
 - Faire en sorte de pouvoir modifier l'état d'une cellule en cliquant dessus.
 
 ## :warning: À rendre
