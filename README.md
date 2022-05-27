@@ -37,8 +37,9 @@ Les responsabilités ne sont alors plus cycliques.
 On peut ainsi changer l'aspect visuel de son application sans pour autant impacter le modèle.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC. 
-Le pattern MVC est très utile pour des applications web, ou tout types d'application disposant d'une interface graphique. 
-## finir
+Le pattern MVC est très utile pour des applications web, ou tout types d'application disposant d'une interface graphique, étant donné que l'on va forcément disposer d'une vue, avec laquelle l'utilisateur va pouvoir interagir. 
+
+Cependant, avec certaines nouvelles technologies comme react ou Angular, l'architecture utilisée est l'architecture MVVM (Model - View - ViewModel)
 
 ## À faire (obligatoire)
 
@@ -64,6 +65,7 @@ L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la fonction up
 > Si vous voulez apprendre d'autres choses
 
 - Faire en sorte de pouvoir changer les dimensions de la grille par un `<input/>` HTML.
+J'ai fait en sortes de pouvoir modifier la veleur de l'ancienne constance GAME_SIZE à travers le controller, 
 - Faire en sorte de pouvoir modifier l'état d'une cellule en cliquant dessus.
 
 ## :warning: À rendre
