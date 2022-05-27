@@ -17,6 +17,5 @@ export const controller = model => {
   sizeInput.addEventListener("keyup",function(){
     set_size(sizeInput.value);
     model.updated();
-    model.reset();
   })
 }
